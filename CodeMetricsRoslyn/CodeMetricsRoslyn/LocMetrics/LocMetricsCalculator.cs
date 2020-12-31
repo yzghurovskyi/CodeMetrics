@@ -87,7 +87,7 @@ namespace CodeMetricsRoslyn.LocMetrics
                 SyntaxKind.ReturnKeyword, SyntaxKind.BreakKeyword, SyntaxKind.ContinueKeyword, SyntaxKind.ThrowKeyword,
                 SyntaxKind.SwitchKeyword, SyntaxKind.CaseKeyword,
                 SyntaxKind.UsingKeyword,
-                SyntaxKind.ExpressionStatement, /*SyntaxKind.InvocationExpression,*/ SyntaxKind.LocalDeclarationStatement, SyntaxKind.EmptyStatement,
+                SyntaxKind.ExpressionStatement, SyntaxKind.LocalDeclarationStatement, SyntaxKind.EmptyStatement,
                 SyntaxKind.TryKeyword, SyntaxKind.CatchKeyword, SyntaxKind.FinallyKeyword};
 
             return _root.DescendantNodesAndTokens().Count(n => statements.Contains(n.Kind()));
